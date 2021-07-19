@@ -14,8 +14,8 @@ public class TestIO {
             String input;
             do{
                 input = br.readLine();
-                str_in.add(input);
                 if(input.equals("!q")) break;
+                str_in.add(input);
             }while(!input.equals("!q"));
 
             FileOutputStream fout = new FileOutputStream("test.txt");
